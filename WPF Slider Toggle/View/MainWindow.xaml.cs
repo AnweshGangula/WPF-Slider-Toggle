@@ -30,7 +30,8 @@ namespace WPF_Slider_Toggle.View
         private void Main_SliderToggle(object sender, EventArgs e)
         {
             // reference: https://stackoverflow.com/a/7880901/6908282
-            string checkboxStatus = (bool)((e as RoutedEventArgs).Source as CheckBox).IsChecked ? "Checked" : "Unchecked";
+            bool ischecked = (bool)((e as RoutedEventArgs).Source as CheckBox).IsChecked;
+            string checkboxStatus = ischecked ? "Checked" : "Unchecked";
             MessageBox.Show(checkboxStatus);
         }
     }
