@@ -9,6 +9,6 @@
         Title="MainWindow" Height="300" Width="300">
 
     <Grid Margin="10" >
-        <uc:ToggleSliderControl x:Name="ucSlider" />
+        <uc:ToggleSliderControl x:Name="ucSlider" SliderText="Slider" />
     </Grid>
 </Window>

@@ -20,6 +20,18 @@ namespace WPF_Slider_Toggle.UserControls
     /// </summary>
     public partial class ToggleSliderControl : UserControl
     {
+        public string SliderText
+        {
+            get { return (string)GetValue(SliderTextProperty); }
+            set { SetValue(SliderTextProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for SliderText.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty SliderTextProperty =
+            DependencyProperty.Register("SliderText", typeof(string), typeof(ToggleSliderControl), new PropertyMetadata(null));
+
+
+
         public ToggleSliderControl()
         {
             InitializeComponent();

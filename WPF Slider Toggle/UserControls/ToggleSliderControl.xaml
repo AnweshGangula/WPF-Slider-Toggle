@@ -4,6 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:WPF_Slider_Toggle.UserControls"
+             x:Name="ucl"
              mc:Ignorable="d" 
              d:DesignHeight="50" d:DesignWidth="150">
     <UserControl.Resources>
@@ -86,9 +87,9 @@
         </Style>
     </UserControl.Resources>
 
-    <Grid x:Name="LayoutRoot">
+    <Grid DataContext="{Binding ElementName=ucl}" >
         <CheckBox 
-            Content="CheckBox"
+            Content="{Binding Path=SliderText}"
             Style="{DynamicResource SliderStyle}" 
             Checked="CheckBox_Changed"
             Unchecked="CheckBox_Changed"
