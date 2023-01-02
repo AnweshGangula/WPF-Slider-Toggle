@@ -77,6 +77,12 @@
     </UserControl.Resources>
 
     <Grid x:Name="LayoutRoot">
-        <CheckBox HorizontalAlignment="Center" Style="{DynamicResource SliderStyle}" VerticalAlignment="Center" Content="CheckBox"/>
+        <CheckBox 
+            Content="CheckBox"
+            Style="{DynamicResource SliderStyle}" 
+            Checked="CheckBox_Changed"
+            Unchecked="CheckBox_Changed"
+            HorizontalAlignment="Center" 
+            VerticalAlignment="Center" />
     </Grid>
 </UserControl>

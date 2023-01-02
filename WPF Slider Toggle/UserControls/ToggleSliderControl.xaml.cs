@@ -24,5 +24,12 @@ namespace WPF_Slider_Toggle.UserControls
         {
             InitializeComponent();
         }
+
+        public event EventHandler UC_SliderToggled;
+
+        private void CheckBox_Changed(object sender, RoutedEventArgs e)
+        {
+            UC_SliderToggled?.Invoke(this, e);
+        }
     }
 }

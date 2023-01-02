@@ -7,7 +7,8 @@
         xmlns:uc="clr-namespace:WPF_Slider_Toggle.UserControls"
         mc:Ignorable="d"
         Title="MainWindow" Height="300" Width="300">
-    <Grid Margin="10">
-        <uc:ToggleSliderControl />
+
+    <Grid Margin="10" >
+        <uc:ToggleSliderControl x:Name="ucSlider" />
     </Grid>
 </Window>
